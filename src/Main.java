@@ -4,17 +4,16 @@ public class Main {
     public static void main(String[] args) {
 
 
-        //Börja med att bestäm vad klasser ska göra för nåt, och skapa objekt.
-        //Rita upp spelplanen
-        //Skapa 2 spelare med namn, ena har spelpjäsen X och den andra har spelpjäsen O.
-        //Skapa en metod för att spelare ska kunna välja vilken ruta som de vill välja att gå lägga på.
-        //Om det blir tre i rad, ska man presentera vinnaren.
-        //Om det blir oavgjort ska det stå.
+        Gameboard board = new Gameboard();
+        board.initialiseBoard();
 
-        Gameboard gameboard = new Gameboard();
-        gameboard.drawBoard();
-
-
-
+        while (true) {
+            board.setPiece();
+            board.drawBoard();
+            board.switchPlayer();
         }
+
     }
+
+}
+
