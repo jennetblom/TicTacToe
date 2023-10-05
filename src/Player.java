@@ -1,23 +1,12 @@
-import java.util.Scanner;
-
 public class Player {
     private String name;
-
-    char gamePiece;
-    int score;
+    private char gamePiece;
+    private int score;
 
     public Player (String name , char gamePiece){
         this.name=name;
         this.score=0;
         this.gamePiece=gamePiece;
-    }
-
-    public int getScore() {
-        return score;
-    }
-
-    public void setScore(int score) {
-        this.score = score;
     }
 
     public String getName() {
@@ -36,4 +25,11 @@ public class Player {
         this.gamePiece = gamePiece;
     }
 
+    public int getScore() {
+        return score;
+    }
+
+    public void increaseScore() {
+        this.score++;
+    }
 }
