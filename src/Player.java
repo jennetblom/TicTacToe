@@ -4,12 +4,28 @@ public class Player {
     private String name;
 
     char gamePiece;
-    public Player(){
+    int score;
+
+    public Player (String name , char gamePiece){
+        this.name=name;
+        this.score=0;
+        this.gamePiece=gamePiece;
     }
 
-    public Player(String name, char gamePiece){
-        this.gamePiece=gamePiece;
-        this.name=name;
+    public int getScore() {
+        return score;
+    }
+
+    public void setScore(int score) {
+        this.score = score;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public char getGamePiece() {
