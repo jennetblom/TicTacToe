@@ -6,9 +6,9 @@ public class Computer extends Player {
         super("Computer",gamePiece);
     }
 
-
     @Override
     public int askWhichSquare(Gameboard gameboard){
+//Slumpar ett tal mellan 1-9 som ska representera rutnätet. Dubbelkollar att rutan är tom, annars kör loopen igen.
 
         int randomSquare;
         do {

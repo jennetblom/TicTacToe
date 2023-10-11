@@ -73,6 +73,7 @@ public class Gameboard {
     }
 
     public void setPiece(int whichSquare) {
+        //Omvandlar en ruta 1-9 till en rad och kolumn på rutnätet. Sätter ut en spelares spelpjäs.
 
         int row = (whichSquare - 1) / 3;
         int column = (whichSquare - 1) % 3;
@@ -85,7 +86,7 @@ public class Gameboard {
         int column = (whichSquare - 1) % 3;
 
         //Returnera true om en ruta är tom.
-        if (board[row][column] == ' ') {
+        if (board[row][column]== ' ') {
             return true;
         } else {
             return false;

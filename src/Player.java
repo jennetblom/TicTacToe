@@ -38,10 +38,11 @@ public class Player {
         this.score = score;
     }
 
+
     public void increaseScore() {
+        //Ökar en spelares poöng med 1;
         this.score++;
     }
-
     public int askWhichSquare(Gameboard gameboard) {
 
         return 0;

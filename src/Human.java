@@ -8,10 +8,10 @@ public class Human extends Player {
     public Human(String name, char gamePiece) {
         super(name, gamePiece);
     }
-
     @Override
     public int askWhichSquare(Gameboard gameboard) {
-
+        //Frågar vilken ruta användaren vill ha och kontrollerar att användaren väljer en tom ruta.
+        // Hanterar felinmatningar.
         int whichSquare = -1;
         do {
             try {
