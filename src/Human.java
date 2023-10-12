@@ -10,8 +10,9 @@ public class Human extends Player {
     }
     @Override
     public int askWhichSquare(Gameboard gameboard) {
-        //Frågar vilken ruta användaren vill ha och kontrollerar att användaren väljer en tom ruta.
-        // Hanterar felinmatningar.
+        //Asks the user which square they want to choose in the gameboard and controls if it's an empty square.
+        //If it's a square that's been taken or if the user has written a wrong answer, the loop will go on until it's right.
+        //Handles any errors
         int whichSquare = -1;
         do {
             try {

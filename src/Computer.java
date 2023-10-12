@@ -8,7 +8,7 @@ public class Computer extends Player {
 
     @Override
     public int askWhichSquare(Gameboard gameboard){
-//Slumpar ett tal mellan 1-9 som ska representera rutnätet. Dubbelkollar att rutan är tom, annars kör loopen igen.
+        //A loop where the computer keeps on generating a random number between 1-9 until it's an empty square in the gameboard.
 
         int randomSquare;
         do {

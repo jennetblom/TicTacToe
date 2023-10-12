@@ -2,7 +2,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Player {
-    //Skapar en playerklass med 3 instansvariabler: namn, spelpjäs och poäng
+    //A plauerclass where every player has a name, gamepiece(X or O) and a score
     private String name;
     private char gamePiece;
     private int score;
@@ -40,7 +40,7 @@ public class Player {
 
 
     public void increaseScore() {
-        //Ökar en spelares poöng med 1;
+        //Increases score by 1 each time
         this.score++;
     }
     public int askWhichSquare(Gameboard gameboard) {

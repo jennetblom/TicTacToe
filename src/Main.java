@@ -15,8 +15,9 @@ public class Main {
                 Welcome to the game of TicTacToe!                   
                 """);
 
-        //Frågar användaren ifall den vill spela singleplayer, multiplayer eller om den vill avsluta.
-        //Varje gamemode spelas i 5 omgångar!
+        //Asks the user if they want to play singleplayer, multiplayer or if they want to quit.
+        //Every gamemode is played 5 rounds!
+
         int chooseGameMode=0;
         Gameboard gameboard = new Gameboard();
         do{
@@ -61,8 +62,7 @@ public class Main {
 
 
     private static ArrayList<Player> multiPlayer () {
-        //Iniatialiserar spelet om det är två spelare
-        //Returnerar en lista med spelare
+       //Returns a list with two players
         scan.nextLine();
         ArrayList<Player> playerList = new ArrayList<>();
 
@@ -79,8 +79,8 @@ public class Main {
         return playerList;
     }
     private static ArrayList<Player> singlePlayer () {
-        //Iniatialiserar spelet om det bara är en spelare och en dator som ska spela
-        //Returnerar en lista med spelare
+        //Returns a list with a player and a computer
+
         scan.nextLine();
         ArrayList<Player> playerListWithCpu = new ArrayList<>();
         System.out.println("Write out your name");
@@ -96,7 +96,7 @@ public class Main {
     }
 
     public static void playGame (ArrayList < Player > playerList, Gameboard gameboard){
-        //Loopar igenom spelet, och kontrollerar ifall det blir en vinst eller om det blir oavgjort
+        //Loops through the game, and checks to see if there is a victory or if it's a tie.
         while (true) {
             for (Player player : playerList) {
                 System.out.println("Player " + player.getName() + " - it's your turn to put " + player.getGamePiece());
@@ -120,14 +120,14 @@ public class Main {
         }
     }
     public static void showScore (ArrayList < Player > playerList, Gameboard gameboard){
-        //Visar poängen för spelarna
+       //Displays the score for every player
         for (Player player : playerList) {
             System.out.println("Player " + player.getName() + " - score: " + player.getScore());
             System.out.println();
         }
     }
     public static void resetScore(ArrayList<Player>players){
-        //Nollställer poängen
+        //Resets score to 0
         for (Player player : players) {
             player.setScore(0);
         }
